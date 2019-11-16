@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<!-- Icon on browser -->
+	<link rel="icon" href="img/LRish.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<title>Lithrish</title>
+</head>
+<body>
+	<div id="ac-wrapper" style='display:none'>
+	<div id="popup">
+			<center>
+					 <h2>Website still under construction!</h2>
+					 <p>But you can get the contacts nonetheless!</p>
+					<input id="popup-btn" type="submit" name="submit" value="Got it!" onClick="PopUp('hide')" />
+			</center>
+	</div>
+</div>
+<header class="cd-auto-hide-header">
+	<nav class="cd-primary-nav">
+		<a href="#cd-navigation" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a> <!-- .nav-trigger -->
+		<ul id="cd-navigation">
+			<li><a  href="#">Home</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+<section class="cd-hero">
+	<div class="cd-hero-content">
+		<!-- your content here (site name etc)  -->
+	</div>
+</section> <!-- .cd-hero -->
+<nav class="cd-secondary-nav">
+	<ul class="second">
+		<li><a href="#about">About</a></li>
+		<li><a href="#services">Services</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</nav> <!-- .cd-secondary-nav -->
+<main class="cd-main-content sub-nav-hero" id="about">
+	<div class="row" id="row-about">
+		<div class="col-sm-8">
+			<p>Lithrish is a newly started company that provides tech solutions of ever expanding capacities. From building simple and modern websites to integrating applications for use in large companies.</p>
+		</div>
+		<div class="col-sm-4">
+			<img src="img/tech-solutions.jpg" alt="" id="row-img">
+		</div>
+	</div>
+	<div class="row" id="row-about">
+		<div class="col-sm-4">
+			<img src="img/mobile-friendly.jpg" alt="" id="row-img">
+		</div>
+		<div class="col-sm-8">
+			<p>Providing modern and mobile friendly design. Contemporary design, easy to use and understand on any device and all browsers.</p>
+		</div>
+	</div>
+	<div>
+		    <button onclick="topFunction()" id="myBtn" title="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+				<div class="container" id="plans-container">
+					<!-- Second row of services -->
+					<p id="services"></p>
+							<div class="row" id="web-plans">
+								<a href="free-site.php" id="get-plan">
+								<div class="col-sm-4" id="plans">
+										<h2>Free website</h2>
+											<p id="plans-p">Apply for a free website here!</p>
+									</div>
+									</a>
+									<a href="free-site.php" id="get-plan">
+									<div class="col-sm-4" id="plans" style="border: solid 5px;">
+											<h2>Build me a Website!</h2>
+												<p id="plans-p">We build you a website</p>
+										</div>
+										</a>
+										<a href="free-site.php" id="get-plan">
+										<div class="col-sm-4" id="plans">
+												<h2>Maintenance</h2>
+													<p id="plans-p">If you need help with existing website</p>
+											</div>
+											</a>
+							</div>
+				</div>
+	</div>
+<!-- Modal popup on pressing POST IT HERE button  THE HIDDEN CONTENT-->
+<div class="modal" id="post-container">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <input type="text" name="" value="email">
+    <input type="text" name="" value="Subject">
+    <textarea name="name" rows="8" cols="80">The idea starts here...</textarea>
+    <p>All we need is "I want a website"</p>
+		<button type="submit" name="button">Submit</button>
+  </div>
+</div>
+<!-- Coppies the text a.k.a. Email. Goes by ID -->
+<script>
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+<script type="text/javascript">
+document.getElementById("copy-email").onclick = function() {
+this.select();
+document.execCommand('copy');
+}
+</script>
+
+		<!--<a href="#top" id="b-top" class="button">Top</a>-->
+	</div>
+</main> <!-- .cd-main-content -->
+<footer style="background-color: #25283D; color: white;">
+	<div class="row" id="contact">
+		<div class="col-sm-4">
+			Telephone number: +447935042334
+		</div>
+		<div class="col-sm-4">
+			Email: contact@lithrish.com
+		</div>
+		<div class="col-sm-4">
+			<div class="footer" id="nav">
+				<ul>
+					<li><a href="#top">Home</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script scr="js/games.js"></script>
+<script>	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+</script>
+
+</body>
+</html>
